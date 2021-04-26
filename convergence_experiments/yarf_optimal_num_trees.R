@@ -62,7 +62,7 @@ m_star_300sims = yarf_optimal_num_trees(yarf_mod = yarf_mod, Nsim = 300)
 # with fewer trees
 yarf_mod1000 = YARF(X, y, num_trees = 1000)
 m_star_1000_100sims = yarf_optimal_num_trees(yarf_mod1000, num_sample_trees = 500)
-m_star_1000_200sims = yarf_optimal_num_trees(yarf_mod1000, num_sample_trees = 500, mse_by = 15, Nsim = 200)
+m_star_1000_200sims = yarf_optimal_num_trees(yarf_mod1000, num_sample_trees = 500, Nsim = 200)
 
 # with num_trees close to num_sample_trees
 m_star_1000_950trees = yarf_optimal_num_trees(yarf_mod1000, num_sample_trees = 950, mse_start = 5)
